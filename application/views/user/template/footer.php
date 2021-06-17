@@ -185,7 +185,6 @@
 
             $("#pilKec").change(function() {
                 var nama_kecamatan = $(this).val()
-                alert('ok')
                 $.getJSON('<?= base_url() ?>user/viewmarker/' + nama_kecamatan, function(data) {
                     clearmap();
                     $.each(data, function(k, v) {
@@ -237,9 +236,8 @@
               if(kategori == 1){
                 var url = "<?= base_url() ?>user/termurah";
             }else if(kategori == 2){
-                var url = `<?= base_url() ?>user/termurah/${crd.longitude}/${crd.latitude}`;
+                var url = `<?= base_url() ?>user/terdekat/${crd.longitude}/${crd.latitude}`;
             }
-            alert(url)
             $.getJSON(url, function(data) {
                 clearmap();
                 $.each(data, function(k, v) {
