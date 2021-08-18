@@ -1,4 +1,4 @@
-<section class="home-slider owl-carousel">
+<section class="home-slider">
     <div class="slider-item" style="background-image: url(<?= base_url('assets/');?>images/bg_1.jpg);">
         <div class="overlay"></div>
         <div class="container">
